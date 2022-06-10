@@ -1,0 +1,13 @@
+should be written slightly differently
+
+                        generic                     specific
+stage                   irmovq V, rB                irmovq $128, %rsp
+fatch                   icode:ifun <- M1[PC]        3:0
+                        rA:rB <- M1[PC+1]           F:4
+                        valC <- M8[PC+2]            8000 0000 0000 0000
+                        valP <- PC + 10
+decode
+execute                 valE <- 0 + valC
+memory
+write back              R[rB] <- valE
+PC update               PC <- valP

@@ -1,0 +1,19 @@
+L0
+|
+fork - bye
+|
+L1
+|
+fork - bye
+|
+L2
+|
+bye
+
+L0
+|
+fork - L1
+|      |
+bye    fork - L2
+       |      |
+       bye    bye
